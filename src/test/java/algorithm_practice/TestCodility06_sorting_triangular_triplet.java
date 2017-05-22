@@ -33,7 +33,7 @@ public class TestCodility06_sorting_triangular_triplet {
 	        
 	        for( p = 0 ; p < len - 2 ; p++ ) {
 	        	int P = A[p];
-            	if( P <= 0 ) continue;
+            	if( P <= 0 ) continue;	// 값이 음수이면 더했을때 값이 작아짐.
 	        	
 	        	q = p+1;
 	            
@@ -48,6 +48,7 @@ public class TestCodility06_sorting_triangular_triplet {
 	                	int R = A[r];
 	                	if( R <= 0 ) continue;
 	                	
+	                	// 3개 값이 모두 동일하면 정삼각형
 	                	if( P == Q ) { 
 	                		if( Q == R ) {
 	                			if( R == P ) {
